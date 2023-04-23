@@ -1,0 +1,146 @@
+[General]
+bypass-system = true
+ipv6 = true
+prefer-ipv6 = false
+private-ip-answer = true
+dns-server = system
+
+
+[Rule]
+
+# ----------------- " 基础拦截 " ------------------
+
+# 基于 AdGuard 过滤器对常规 APP 的拦截部分甄选
+
+# >> China + EasyList
+DOMAIN-SUFFIX,ads.sohu.com,REJECT
+DOMAIN-SUFFIX,ax.ifeng.com,REJECT
+DOMAIN-SUFFIX,bd-js1.2345.com,REJECT
+DOMAIN-SUFFIX,dongya.org,REJECT
+DOMAIN-SUFFIX,ggs.myzaker.com,REJECT
+DOMAIN-SUFFIX,ggxwb.miguvideo.com,REJECT
+DOMAIN-SUFFIX,ghghgf.xuexiwa.com,REJECT
+DOMAIN-SUFFIX,ivy.pconline.com.cn,REJECT
+DOMAIN-SUFFIX,p.tanx.com,REJECT
+DOMAIN-SUFFIX,rpajqxo.cn,REJECT
+DOMAIN-SUFFIX,vungle.com,REJECT
+DOMAIN-SUFFIX,xmmnsl.com,REJECT
+DOMAIN-SUFFIX,yylady.cn,REJECT
+
+# >> EasyPrivacy（隐私保护）
+DOMAIN-SUFFIX,analytics.126.net,REJECT
+DOMAIN-SUFFIX,cnzz.com,REJECT
+DOMAIN-SUFFIX,collector.github.com,REJECT
+DOMAIN-SUFFIX,d31qbv1cthcecs.cloudfront.net,REJECT
+DOMAIN-SUFFIX,dig.bdurl.net,REJECT
+DOMAIN-SUFFIX,google-analytics.com,REJECT
+DOMAIN-SUFFIX,histats.com,REJECT
+DOMAIN-SUFFIX,launches.appsflyer.com,REJECT
+DOMAIN-SUFFIX,log.sina.cn,REJECT
+DOMAIN-SUFFIX,msg.qy.net,REJECT
+DOMAIN-SUFFIX,nex.163.com,REJECT
+DOMAIN-SUFFIX,pv.sohu.com,REJECT
+DOMAIN-SUFFIX,sbeacon.sina.com.cn,REJECT
+DOMAIN-SUFFIX,sdk.51.la,REJECT
+DOMAIN-SUFFIX,sugar.zhihu.com,REJECT
+DOMAIN-SUFFIX,toblog.ctobsnssdk.com,REJECT
+DOMAIN-SUFFIX,tobapplog.ctobsnssdk.com,REJECT
+DOMAIN-SUFFIX,track.sohu.com,REJECT
+DOMAIN-SUFFIX,tracklog.58.com,REJECT
+DOMAIN-SUFFIX,zhihu-web-analytics.zhihu.com,REJECT
+
+# 基于 AdGuard 过滤器对知名 ADS 的拦截部分汇总
+
+# >>> Alibaba（阿里）
+DOMAIN-SUFFIX,df.tanx.com,REJECT
+DOMAIN-SUFFIX,fourier.taobao.com,REJECT
+DOMAIN-SUFFIX,mmstat.com,REJECT
+
+# >>> Baidu（百度）
+DOMAIN-SUFFIX,als.baidu.com,REJECT
+DOMAIN-SUFFIX,cpro.baidustatic.com,REJECT
+DOMAIN-SUFFIX,eclick.baidu.com,REJECT
+DOMAIN-SUFFIX,ecmb.bdimg.com,REJECT
+DOMAIN-SUFFIX,hm.baidu.com,REJECT
+DOMAIN-SUFFIX,pos.baidu.com,REJECT
+DOMAIN-SUFFIX,push.zhanzhang.baidu.com,REJECT
+DOMAIN-SUFFIX,sofire.bdstatic.com,REJECT
+DOMAIN-SUFFIX,sp1.baidu.com,REJECT
+DOMAIN-SUFFIX,zz.bdstatic.com,REJECT
+
+# >>> ByteDance（字节）
+DOMAIN-SUFFIX,dm.toutiao.com,REJECT
+DOMAIN-SUFFIX,log-api.pangolin-sdk-toutiao.com,REJECT
+DOMAIN-SUFFIX,mcs.snssdk.com,REJECT
+
+# >>> Tencent（腾讯）
+DOMAIN-SUFFIX,aegis.qq.com,REJECT
+DOMAIN-SUFFIX,beacon.qq.com,REJECT
+DOMAIN-SUFFIX,e.qq.com,REJECT
+DOMAIN-SUFFIX,gdt.qq.com,REJECT
+DOMAIN-SUFFIX,trace.qq.com,REJECT
+
+# ----------------- " 抓包拦截 " ------------------
+
+# >>> 脚本（Script）
+
+# >>> 广告插件
+DOMAIN-SUFFIX,ads3-normal-lf.zijieapi.com,REJECT
+DOMAIN-SUFFIX,ads5-normal-lf.zijieapi.com,REJECT
+DOMAIN-SUFFIX,ether-pack.pangolin-sdk-toutiao.com,REJECT
+DOMAIN-SUFFIX,sf3-fe-tos.pglstatp-toutiao.com,REJECT
+DOMAIN-SUFFIX,sf6-fe-tos.pglstatp-toutiao.com,REJECT
+DOMAIN-SUFFIX,p3-be-pack-sign.pglstatp-toutiao.com,REJECT
+DOMAIN-SUFFIX,p6-ad-sign.byteimg.com,REJECT
+DOMAIN-SUFFIX,p6-be-pack-sign.pglstatp-toutiao.com,REJECT
+DOMAIN-SUFFIX,p9-ad-sign.byteimg.com,REJECT
+DOMAIN-SUFFIX,p9-be-pack-sign.pglstatp-toutiao.com,REJECT
+DOMAIN-SUFFIX,p26-be-pack-sign.pglstatp-toutiao.com,REJECT
+DOMAIN-SUFFIX,pgdt.ugdtimg.com,REJECT
+DOMAIN-SUFFIX,v9-be-pack.pglstatp-toutiao.com,REJECT
+
+# 基于 Safari 浏览器 的部分网页的抓包 自用规则
+DOMAIN-SUFFIX,cdn-adn-https-new.rajump.com,REJECT
+DOMAIN-SUFFIX,p1-lm.adukwai.com,REJECT
+DOMAIN-SUFFIX,wallpaper-1258344696.file.myqcloud.com,REJECT
+
+# ----------------- " 域名代理 " ------------------
+
+# >>> Google
+DOMAIN-SUFFIX,google.com,PROXY
+DOMAIN-SUFFIX,google.com.hk,PROXY
+DOMAIN-SUFFIX,googleapis.com,PROXY
+DOMAIN-SUFFIX,googlevideo.com,PROXY
+DOMAIN-SUFFIX,googleusercontent.com,PROXY
+DOMAIN-SUFFIX,ggpht.com,PROXY
+DOMAIN-SUFFIX,youtu.be,PROXY
+DOMAIN-SUFFIX,youtube.com,PROXY
+DOMAIN-SUFFIX,ytimg.com,PROXY
+
+# >>> Telegram
+DOMAIN-SUFFIX,t.me,PROXY
+DOMAIN-SUFFIX,telegra.ph,PROXY
+DOMAIN-SUFFIX,telegram.org,PROXY
+IP-CIDR,91.108.56.0/22,PROXY,no-resolve
+IP-CIDR,149.154.160.0/20,PROXY,no-resolve
+
+# >>> Twitter
+DOMAIN-SUFFIX,t.co,PROXY
+DOMAIN-SUFFIX,twimg.com,PROXY
+DOMAIN-SUFFIX,twitter.com,PROXY
+
+# >>> Other
+DOMAIN-SUFFIX,github.com,PROXY
+DOMAIN-SUFFIX,githubusercontent.com,PROXY
+
+# ----------------- " 区域选项 " ------------------
+
+# >>> FINAL 区域
+FINAL,DIRECT
+
+[Host]
+localhost = 127.0.0.1
+
+[URL Rewrite]
+^https?://(www.)?g.cn https://www.google.com 302
+^https?://(www.)?google.cn https://www.google.com 302
