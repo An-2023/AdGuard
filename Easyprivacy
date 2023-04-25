@@ -107,7 +107,6 @@ DOMAIN-SUFFIX,wallpaper-1258344696.file.myqcloud.com,REJECT
 # 实验部分规则
 DOMAIN-SUFFIX,a-remad.qm989.com,REJECT
 DOMAIN-SUFFIX,mobads-logs.baidu.com,REJECT
-DOMAIN-SUFFIX,cdn.bcebos.com,REJECT
 DOMAIN-SUFFIX,umengcloud.com,REJECT
 DOMAIN-SUFFIX,mobads.baidu.com,REJECT
 DOMAIN-SUFFIX,cdn-new-ad.wtzw.com,REJECT
