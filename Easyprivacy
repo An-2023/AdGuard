@@ -104,6 +104,32 @@ DOMAIN-SUFFIX,cdn-adn-https-new.rajump.com,REJECT
 DOMAIN-SUFFIX,p1-lm.adukwai.com,REJECT
 DOMAIN-SUFFIX,wallpaper-1258344696.file.myqcloud.com,REJECT
 
+# 实验部分规则
+DOMAIN-SUFFIX,a-remad.qm989.com,REJECT
+DOMAIN-SUFFIX,mobads-logs.baidu.com,REJECT
+DOMAIN-SUFFIX,cdn.bcebos.com,REJECT
+DOMAIN-SUFFIX,umengcloud.com,REJECT
+DOMAIN-SUFFIX,mobads.baidu.com,REJECT
+DOMAIN-SUFFIX,cdn-new-ad.wtzw.com,REJECT
+DOMAIN-SUFFIX,umeng.com,REJECT
+DOMAIN-SUFFIX,getui.net,REJECT
+DOMAIN-SUFFIX,getui.com,REJECT
+DOMAIN-SUFFIX,ads.games.laohu.com,REJECT
+DOMAIN-SUFFIX,dataflow.biliapi.com,REJECT
+DOMAIN-SUFFIX,miniapp.bilibili.com,REJECT
+DOMAIN-SUFFIX,cm.bilibili.com,REJECT
+DOMAIN-SUFFIX,toutiao-frontier.snssdk.com,REJECT
+DOMAIN-SUFFIX,adukwai.com,REJECT
+DOMAIN-SUFFIX,bugly.qq.com,REJECT
+DOMAIN-SUFFIX,e.kuaishou.com,REJECT
+DOMAIN-SUFFIX,appcloud2.in.zhihu.com,REJECT
+DOMAIN-SUFFIX,appcloud2.zhihu.com,REJECT
+DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
+DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,REJECT
+DOMAIN-SUFFIX,hefei64.com,REJECT
+DOMAIN-SUFFIX,yegzkw.xyz,REJECT
+
 # ----------------- " 域名代理 " ------------------
 
 # >>> Google
@@ -144,3 +170,20 @@ localhost = 127.0.0.1
 [URL Rewrite]
 ^https?://(www.)?g.cn https://www.google.com 302
 ^https?://(www.)?google.cn https://www.google.com 302
+
+# 脚本规则拦截
+^https?://www.renrendongman.com/hx.gif - REJECT
+^https?://adurl.scriptmh.com/getUrl.php?r= - REJECT
+^https?://cdn.qctcu.com/wapgg/s.js - REJECT
+^https?://fdbbhjb.iwdvvoc.cn/VVAvcnms/*.gif - REJECT
+
+# 特殊拦截规则
+^https?://img.manhua.weibo.com/hcover/2020/03/31/5580308139_pbuYLHaV.jpg - REJECT
+^https?://p6-passport.byteacctimg.com/origin/33a38000382800d62bba9 - REJECT
+
+# 也许是广告吧 ...
+^https?://wise-novel-authority-logo.cdn.bcebos.com/wise-novel-authority-logo/e30fae0072fc.jpg - REJECT
+
+# 百度小说 内置广告
+^https?://feed-image.baidu.com/0/pic/*.jpg - REJECT
+^https?://novelapi.baidu.com/novelopenapi/common/ad?app_code=wise_novel&sign= - REJECT
