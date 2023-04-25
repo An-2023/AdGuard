@@ -186,3 +186,6 @@ localhost = 127.0.0.1
 # 百度小说 内置广告
 ^https?:\/\/feed-image\.baidu\.com\/0\/pic - REJECT
 ^https?:\/\/novelapi\.baidu\.com\/novelopenapi\/common\/ad - REJECT \
+
+# 知乎 ip4/6 收集
+^http:\/\/103\.41\.167\.237\/v2\/resolv\?host _ REJECT
