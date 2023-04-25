@@ -172,18 +172,18 @@ localhost = 127.0.0.1
 ^https?://(www.)?google.cn https://www.google.com 302
 
 # 脚本规则拦截
-^https?://www.renrendongman.com/hx.gif - REJECT
-^https?://adurl.scriptmh.com/getUrl.php?r= - REJECT
-^https?://cdn.qctcu.com/wapgg/s.js - REJECT
-^https?://fdbbhjb.iwdvvoc.cn/VVAvcnms/*.gif - REJECT
+^https?:\/\/www\.renrendongman\.com\/hx\.gif - REJECT
+^https?:\/\/adurl\.scriptmh\.com\/getUrl\.php - REJECT
+^https?:\/\/cdn\.qctcu\.com\/wapgg - REJECT
+^https?:\/\/fdbbhjb\.iwdvvoc\.cn\/VVAvcnms - REJECT
 
 # 特殊拦截规则
-^https?://img.manhua.weibo.com/hcover/2020/03/31/5580308139_pbuYLHaV.jpg - REJECT
-^https?://p6-passport.byteacctimg.com/origin/33a38000382800d62bba9 - REJECT
+^https?:\/\/img\.manhua\.weibo\.com\/hcover\/2020\/03\/31\/5580308139_pbuYLHaV\.jpg - REJECT
+^https?:\/\/p6-passport\.byteacctimg\.com\/origin\/33a38000382800d62bba9 - REJECT
 
 # 也许是广告吧 ...
-^https?://wise-novel-authority-logo.cdn.bcebos.com/wise-novel-authority-logo/e30fae0072fc.jpg - REJECT
+^https?:\/\/wise-novel-authority-logo\.cdn\.bcebos\.com\/wise-novel-authority-logo\/e30fae0072fc\.jpg - REJECT
 
 # 百度小说 内置广告
-^https?://feed-image.baidu.com/0/pic/*.jpg - REJECT
-^https?://novelapi.baidu.com/novelopenapi/common/ad?app_code=wise_novel&sign= - REJECT
+^https?:\/\/feed-image\.baidu\.com\/0\/pic - REJECT
+^https?:\/\/novelapi\.baidu\.com\/novelopenapi\/common\/ad - REJECT \
