@@ -120,6 +120,7 @@ DOMAIN-SUFFIX,cm.bilibili.com,REJECT
 DOMAIN-SUFFIX,toutiao-frontier.snssdk.com,REJECT
 DOMAIN-SUFFIX,adukwai.com,REJECT
 DOMAIN-SUFFIX,bugly.qq.com,REJECT
+DOMAIN-SUFFIX,open.e.kuaishou.com,REJECT
 DOMAIN-SUFFIX,appcloud2.in.zhihu.com,REJECT
 DOMAIN-SUFFIX,appcloud2.zhihu.com,REJECT
 DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
@@ -158,10 +159,6 @@ DOMAIN-SUFFIX,github.com,PROXY
 DOMAIN-SUFFIX,githubusercontent.com,PROXY
 
 # ----------------- " 区域选项 " ------------------
-
-# 七猫小说
-# 2023-04-26 七猫小说内置，拒绝后无法打开书籍
-DOMAIN-SUFFIX,open.e.kuaishou.com,DIRECT
 
 # >>> FINAL 区域
 FINAL,DIRECT
