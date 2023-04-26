@@ -168,5 +168,5 @@ localhost = 127.0.0.1
 
 [URL Rewrite]
 
-# 知乎 ip4/6 收集
+# ～ 知乎 ip4/6 收集
 ^http:\/\/103\.41\.167\.237\/v2\/resolv\?host _ REJECT
