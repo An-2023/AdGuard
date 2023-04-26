@@ -161,7 +161,7 @@ DOMAIN-SUFFIX,githubusercontent.com,PROXY
 
 # 七猫小说
 # 2023-04-26 七猫小说内置，拒绝后无法打开书籍
-DOMAIN-SUFFIX,e.kuaishou.com,DIRECT
+DOMAIN-SUFFIX,open.e.kuaishou.com,DIRECT
 
 # >>> FINAL 区域
 FINAL,DIRECT
