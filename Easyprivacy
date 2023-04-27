@@ -162,14 +162,18 @@ localhost = 127.0.0.1
 [URL Rewrite]
 
 # > 知乎
-# [+] 2023-04-27 01、用于收集本机的 ip4/ip6 地址
+# [+] 2023-04-27 01、用于收集本机的 ip4/ip6 地址 （http）
 ^https?:\/\/103\.41\.167\.237\/v2\/resolv\?host _ REJECT
 
 # > 字节跳动
-# [+] 2023-04-27 01、视频广告的软件 logo
+# [+] 2023-04-27 01、视频广告的软件 logo （http）
 ^https?:\/\/p(6|9)-ad-sign\.byteimg\.com\/(ad-app-package|web.business.image) _ REJECT
-# [+] 2023-04-27 02、开屏广告
+# [+] 2023-04-27 02、开屏广告 （https）
 ^https?:\/\/p(3|6|9|26)-be-pack-sign\.pglstatp-toutiao\.com\/(ad-app-package|ad.union.api|web.business.image) _ REJECT
+# [+] 2023-04-27 03、百度阅读 App 视频流广告 （https）
+^https?:\/\/v(3|6|9|26)-be-pack\.pglstatp-toutiao\.com\/*\/video\/tos\/cn\/tos-cn-ve-51\/ _ REJECT
+# [+] 2023-04-27 04、抖音 App 视频流广告 （http）
+^https?:\/\/p(3|6|9|26)-sign\.douyinpic\.com\/large\/tos-cn-p-0051\/ _ REJECT
 
 [MITM]
-hostname = p*-ad-sign.byteimg.com,p*-be-pack-sign.pglstatp-toutiao.com
+hostname = pglstatp-toutiao.com
