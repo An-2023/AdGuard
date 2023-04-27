@@ -161,9 +161,9 @@ localhost = 127.0.0.1
 
 [URL Rewrite]
 
-# > 知乎
-# [+] 2023-04-27 01、用于收集本机的 ip4/ip6 地址 （http）
-^https?:\/\/103\.41\.167\.237\/v2\/resolv\?host _ REJECT
+# > 百度
+# [+] 2023-04-27 01、网页版百度小说插件广告 （https）
+^https?:\/\/novelapi\.baidu\.com\/novelopenapi\/common\/ad _ REJECT
 
 # > 字节跳动
 # [+] 2023-04-27 01、视频广告的软件 logo （http）
@@ -175,5 +175,9 @@ localhost = 127.0.0.1
 # [+] 2023-04-27 04、抖音 App 视频流广告 （http）
 ^https?:\/\/p(3|6|9|26)-sign\.douyinpic\.com\/large\/tos-cn-p-0051\/ _ REJECT
 
+# > 知乎
+# [+] 2023-04-27 01、用于收集本机的 ip4/ip6 地址 （http）
+^https?:\/\/103\.41\.167\.237\/v2\/resolv\?host _ REJECT
+
 [MITM]
-hostname = pglstatp-toutiao.com
+hostname = novelapi.baidu.com,pglstatp-toutiao.com
