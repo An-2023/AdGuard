@@ -49,6 +49,9 @@ DOMAIN-SUFFIX,track.sohu.com,REJECT
 DOMAIN-SUFFIX,tracklog.58.com,REJECT
 DOMAIN-SUFFIX,zhihu-web-analytics.zhihu.com,REJECT
 
+# >>> IP 地址收集
+DOMAIN-SUFFIX,pv.ip1398.com,REJECT
+
 # 基于 AdGuard 过滤器对知名 ADS 的拦截部分汇总
 
 # >>> Alibaba（阿里）
@@ -121,9 +124,6 @@ DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
 DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,REJECT
 DOMAIN-SUFFIX,hefei64.com,REJECT
 DOMAIN-SUFFIX,yegzkw.xyz,REJECT
-
-# ip 地址收集
-DOMAIN-SUFFIX,pv.ip1398.com,REJECT
 
 # ----------------- " 域名代理 " ------------------
 
