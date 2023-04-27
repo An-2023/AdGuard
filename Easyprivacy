@@ -172,9 +172,11 @@ localhost = 127.0.0.1
 # [+] 2023-04-27 01、用于收集本机的 ip4/ip6 地址
 ^https?:\/\/103\.41\.167\.237\/v2\/resolv\?host _ REJECT
 
-# > 番茄小说
+# > 字节跳动
 # [+] 2023-04-27 01、视频广告的软件 logo
-^https?:\/\/p(6|9)-ad-sign\.byteimg\.com\/(web.business.image|ad-app-package) _ REJECT
+^https?:\/\/p(6|9)-ad-sign\.byteimg\.com\/(ad-app-package|web.business.image) _ REJECT
+# [+] 2023-04-27 02、开屏广告
+^https?:\/\/p(3|6|9|26)-be-pack-sign\.pglstatp-toutiao\.com\/(ad-app-package|ad.union.api|web.business.image) _ REJECT
 
 [MITM]
-hostname = p*-ad-sign.byteimg.com
+hostname = p*-ad-sign.byteimg.com,p*-be-pack-sign.pglstatp-toutiao.com
