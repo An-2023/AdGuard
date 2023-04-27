@@ -168,5 +168,13 @@ localhost = 127.0.0.1
 
 [URL Rewrite]
 
-# ～ 知乎 ip4/6 收集
-^http:\/\/103\.41\.167\.237\/v2\/resolv\?host _ REJECT
+# > 知乎
+# [+] 2023-04-27 01、用于收集本机的 ip4/ip6 地址
+^https?:\/\/103\.41\.167\.237\/v2\/resolv\?host _ REJECT
+
+# > 番茄小说
+# [+] 2023-04-27 01、视频广告的软件 logo
+^https?:\/\/p(6|9)-ad-sign\.byteimg\.com\/(web.business.image|ad-app-package) _ REJECT
+
+[MITM]
+hostname = p*-ad-sign.byteimg.com
