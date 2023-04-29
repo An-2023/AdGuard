@@ -10,6 +10,14 @@ DOMAIN-SUFFIX,pv.ip1398.com,REJECT
 # [+] 2023-04-27 01、百度 APP 小说插页广告
 URL-REGEX,^https?:\/\/novelapi\.baidu\.com\/novelopenapi\/common\/ad\?app_code=wise_novel&sign=,REJECT
 
+# > ByteDance & 字节跳动
+# [+] 2023-04-29 01、垃圾广告元素
+URL-REGEX,^https:\/\/p3\.toutiaoimg\.com\/origin\/138240001524ede25ed70,REJECT
+
+# > Meituan & 美团
+# [+] 2023-04-29 01、垃圾广告元素
+URL-REGEX,^https:\/\/p0\.meituan\.net\/dpplatform\/e4bf8ad5821ee474fdae3a7818c2d1ea18725\.gif,REJECT
+
 # > JavaScript & 脚本
 # [+] 2023-04-29 01、<qiman59.com> 插页广告脚本
 URL-REGEX,^https:\/\/adurl\.scriptmh\.com\/getUrl\.php\?r=,REJECT
@@ -20,20 +28,40 @@ URL-REGEX,^https:\/\/diy\.dcqs4\.com\/sh\/to\/1380,REJECT
 URL-REGEX,^https:\/\/diy\.wcdc5\.com\/sh\/to\/1381,REJECT
 # [+] 2023-04-29 03、<dushimh.com> 广告顶部横幅
 URL-REGEX,^https:\/\/tg\.wmqfey\.com\/sc\/6276\?n=kbbxqcbr,REJECT
-# [+] 2023-04-29 04、<dushimh.com> 没有用处的元素
+# [+] 2023-04-29 04、<dushimh.com> 无用的页面元素
 URL-REGEX,^https:\/\/m\.dushimh\.com\/assets\/d6ae7e24\/images\/head_line\.gif,REJECT
 # [+] 2023-04-29 05、<iqtao.cn> 广告顶部横幅
 URL-REGEX,^https:\/\/wap\.elevatorpartsbuy\.com\/sc\/2169\?n=ugoggdnf,REJECT
-# [+] 2023-04-29 06、<iqtao.cn> 没有用处的元素
-URL-REGEX,^https:\/\/p0\.meituan\.net\/dpplatform\/e4bf8ad5821ee474fdae3a7818c2d1ea18725\.gif,REJECT
-URL-REGEX,^https:\/\/p3\.toutiaoimg\.com\/origin\/138240001524ede25ed70,REJECT
-# [+] 2023-04-29 07、<biqugei.net> 广告顶部横幅
+# [+] 2023-04-29 06、<biqugei.net> 广告顶部横幅
 URL-REGEX,^https:\/\/wsx\.acqc9\.com\/sh\/to,REJECT
 
 
 # >> GitHub
 DOMAIN-SUFFIX,github.com,PROXY
 DOMAIN-SUFFIX,raw.githubusercontent.com,PROXY
+
+# >> Google & 谷歌
+DOMAIN-SUFFIX,google.com,PROXY
+DOMAIN-SUFFIX,google.com.hk,PROXY
+DOMAIN-SUFFIX,googleapis.com,PROXY
+DOMAIN-SUFFIX,googlevideo.com,PROXY
+DOMAIN-SUFFIX,googleusercontent.com,PROXY
+DOMAIN-SUFFIX,ggpht.com,PROXY
+DOMAIN-SUFFIX,youtu.be,PROXY
+DOMAIN-SUFFIX,youtube.com,PROXY
+DOMAIN-SUFFIX,ytimg.com,PROXY
+
+# >> Telegram & 电报
+DOMAIN-SUFFIX,t.me,PROXY
+DOMAIN-SUFFIX,telegra.ph,PROXY
+DOMAIN-SUFFIX,telegram.org,PROXY
+IP-CIDR,91.108.56.0/22,PROXY,no-resolve
+IP-CIDR,149.154.160.0/20,PROXY,no-resolve
+
+# >> Twitter & 推特
+DOMAIN-SUFFIX,t.co,PROXY
+DOMAIN-SUFFIX,twimg.com,PROXY
+DOMAIN-SUFFIX,twitter.com,PROXY
 
 # >>> FINAL 区域
 FINAL,DIRECT
@@ -45,14 +73,3 @@ FINAL,DIRECT
 
 [MITM]
 hostname = diy.dcqs4.com,diy.wcdc5.com,dushimh.com,novelapi.baidu.com,p0.meituan.net,p3.toutiaoimg.com,tg.wmqfey.com,wap.elevatorpartsbuy.wsx.acqc9.com,com,xw.ooegpip.cn
-# 测试网址
-https://xw.ooegpip.cn/ZB/640200/32.gif
-https://diy.dcqs4.com/sh/to/1380
-https://diy.wcdc5.com/sh/to/1381
-https://m.dushimh.com/assets/d6ae7e24/images/head_line.gif
-https://tg.wmqfey.com/sc/6276?n=kbbxqcbr
-https://tg.wmqfey.com/sc/6276?n=kbbxqcbr
-https://wap.elevatorpartsbuy.com/sc/2169?n=ugoggdnf
-https://p3.toutiaoimg.com/origin/138240001524ede25ed70
-https://p0.meituan.net/dpplatform/e4bf8ad5821ee474fdae3a7818c2d1ea18725.gif
-https://wsx.acqc9.com/sh/to/234
