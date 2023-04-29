@@ -7,8 +7,15 @@ bypass-system = true
 DOMAIN-SUFFIX,pv.ip1398.com,REJECT
 
 # > Baidu & 百度
-# [+] 2023-04-27 01、百度 APP 小说插屏广告
+# [+] 2023-04-27 01、百度 APP 小说插页广告
 URL-REGEX,^https?:\/\/novelapi\.baidu\.com\/novelopenapi\/common\/ad\?app_code=wise_novel&sign=,REJECT
+
+# > JavaScript & 脚本
+# [+] 2023-04-29 01、<qiman59.com> 插页广告脚本
+URL-REGEX,^https:\/\/adurl\.scriptmh\.com\/getUrl\.php\?r=,REJECT
+URL-REGEX,^https:\/\/adurl\.admh8\.com\/getAdUrl\.php\?r,REJECT
+# [+] 2023-04-29 02、<dushimh.com> 插页广告脚本
+URL-REGEX,^https:\/\/tpic\.kszvmqo\.cn\/2021\/*\/*\.txt,REJECT
 
 # >>> FINAL 区域
 FINAL,DIRECT
@@ -19,4 +26,5 @@ FINAL,DIRECT
 ^https?:\/\/(www.)?(g|google).cn https://www.google.com 302
 
 [MITM]
-hostname = novelapi.baidu.com
+hostname = novelapi.baidu.com,tpic.kszvmqo.cn
+https://tpic.kszvmqo.cn/2021/08/16033100179.txt
