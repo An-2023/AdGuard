@@ -17,6 +17,10 @@ URL-REGEX,^https:\/\/adurl\.admh8\.com\/getAdUrl\.php\?r,REJECT
 # [+] 2023-04-29 02、<dushimh.com> 插页广告脚本
 URL-REGEX,^https:\/\/tpic\.kszvmqo\.cn\/2021\/*\/*\.txt,REJECT
 
+# >> GitHub
+DOMAIN-SUFFIX,github.com,PROXY
+DOMAIN-SUFFIX,raw.githubusercontent.com,PROXY
+
 # >>> FINAL 区域
 FINAL,DIRECT
 
