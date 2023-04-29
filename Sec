@@ -1,0 +1,22 @@
+[General]
+bypass-system = true
+
+[Rule]
+
+# > IP 地址
+DOMAIN-SUFFIX,pv.ip1398.com,REJECT
+
+# > Baidu & 百度
+# [+] 2023-04-27 01、百度 APP 小说插屏广告
+URL_REGEX,^https?:\/\/novelapi\.baidu\.com\/novelopenapi\/common\/ad\?app_code=wise_novel&sign=,REJECT
+
+# >>> FINAL 区域
+FINAL,DIRECT
+
+[URL Rewrite]
+# > Google & 谷歌
+# [+] 2023-04-27 01、Google 域名重写
+^https?:\/\/(www.)?(g|google).cn https://www.google.com 302
+
+[MITM]
+hostname = novelapi.baidu.com
