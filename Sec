@@ -8,7 +8,7 @@ DOMAIN-SUFFIX,pv.ip1398.com,REJECT
 
 # > Baidu & 百度
 # [+] 2023-04-27 01、百度 APP 小说插屏广告
-URL_REGEX,^https?:\/\/novelapi\.baidu\.com\/novelopenapi\/common\/ad\?app_code=wise_novel&sign=,REJECT
+URL-REGEX,^https?:\/\/novelapi\.baidu\.com\/novelopenapi\/common\/ad\?app_code=wise_novel&sign=,REJECT
 
 # >>> FINAL 区域
 FINAL,DIRECT
