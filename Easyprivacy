@@ -50,9 +50,6 @@ DOMAIN-SUFFIX,track.sohu.com,REJECT
 DOMAIN-SUFFIX,tracklog.58.com,REJECT
 DOMAIN-SUFFIX,zhihu-web-analytics.zhihu.com,REJECT
 
-# >>> IP 地址收集
-DOMAIN-SUFFIX,pv.ip1398.com,REJECT
-
 # 基于 AdGuard 过滤器对知名 ADS 的拦截部分汇总
 
 # >>> Alibaba（阿里）
@@ -151,23 +148,10 @@ DOMAIN-SUFFIX,t.co,PROXY
 DOMAIN-SUFFIX,twimg.com,PROXY
 DOMAIN-SUFFIX,twitter.com,PROXY
 
-# >>> Other
-DOMAIN-SUFFIX,github.com,PROXY
-DOMAIN-SUFFIX,githubusercontent.com,PROXY
-
-# ----------------- " 区域选项 " ------------------
-
-# >>> FINAL 区域
-FINAL,DIRECT
-
 [Host]
 localhost = 127.0.0.1
 
 [URL Rewrite]
-
-# > 百度
-# [+] 2023-04-27 01、网页版百度小说插件广告 （https）
-^https?:\/\/novelapi\.baidu\.com\/novelopenapi\/common\/ad _ REJECT
 
 # > 字节跳动
 # [+] 2023-04-27 01、视频广告的软件 logo （http）
@@ -184,4 +168,4 @@ localhost = 127.0.0.1
 ^https?:\/\/103\.41\.167\.237\/v2\/resolv\?host _ REJECT
 
 [MITM]
-hostname = novelapi.baidu.com,pglstatp-toutiao.com
+hostname = pglstatp-toutiao.com
