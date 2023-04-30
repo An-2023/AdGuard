@@ -13,6 +13,11 @@ URL-REGEX,^https?:\/\/novelapi\.baidu\.com\/novelopenapi\/common\/ad\?app_code=w
 # > ByteDance & 字节跳动
 # [+] 2023-04-29 01、垃圾广告元素
 URL-REGEX,^https:\/\/p3\.toutiaoimg\.com\/origin\/138240001524ede25ed70,REJECT
+# [+] 2023-04-30 02、广告SDK
+URL-REGEX,^https?:\/\/p(6|9)-ad-sign\.byteimg\.com\/(ad-app-package|web.business.image),REJECT
+URL-REGEX,^https?:\/\/p(3|6|9|26)-be-pack-sign\.pglstatp-toutiao\.com\/(ad-app-package|ad.union.api|web.business.image),REJECT
+URL-REGEX,^https?:\/\/v(3|6|9|26)-be-pack\.pglstatp-toutiao\.com\/*\/video\/tos\/cn\/tos-cn-ve-51,REJECT
+URL-REGEX,^https?:\/\/p(3|6|9|26)-sign\.douyinpic\.com\/large\/tos-cn-p-0051,REJECT
 
 # > Meituan & 美团
 # [+] 2023-04-29 01、垃圾广告元素
