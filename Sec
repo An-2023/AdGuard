@@ -189,6 +189,3 @@ FINAL,DIRECT
 # > Google & 谷歌
 # [+] 2023-04-27 01、Google 域名重写
 ^https?:\/\/(www.)?(g|google).cn https://www.google.com 302
-
-[MITM]
-hostname = diy.dcqs4.com,diy.wcdc5.com,dushimh.com,novelapi.baidu.com,p0.meituan.net,p3.toutiaoimg.com,tg.wmqfey.com,wap.elevatorpartsbuy.wsx.acqc9.com,com,xw.ooegpip.cn
