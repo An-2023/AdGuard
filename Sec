@@ -67,23 +67,15 @@ URL-REGEX,^https?:\/\/novelapi\.baidu\.com\/novelopenapi\/common\/ad\?app_code=w
 # > ByteDance & 字节跳动
 DOMAIN-SUFFIX,dm.toutiao.com,REJECT
 DOMAIN-SUFFIX,log-api.pangolin-sdk-toutiao.com,REJECT
+DOMAIN-SUFFIX,log-api.pangolin-sdk-toutiao-b.com,REJECT
 DOMAIN-SUFFIX,mcs.snssdk.com,REJECT
 
-# [+] 2023-04-27 01、疑似广告类 SDK
+# [+] 2023-04-27 01、广告类 SDK
 DOMAIN-SUFFIX,ads3-normal-lf.zijieapi.com,REJECT
 DOMAIN-SUFFIX,ads5-normal-lf.zijieapi.com,REJECT
-DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
-
-# [+] 2023-04-29 02、垃圾广告元素
-URL-REGEX,^https:\/\/p3\.toutiaoimg\.com\/origin\/138240001524ede25ed70,REJECT
-
-# [+] 2023-04-30 03、广告SDK
 DOMAIN-SUFFIX,p6-ad-sign.byteimg.com,REJECT
 DOMAIN-SUFFIX,p9-ad-sign.byteimg.com,REJECT
-
-# > Meituan & 美团
-# [+] 2023-04-29 01、垃圾广告元素
-URL-REGEX,^https:\/\/p0\.meituan\.net\/dpplatform\/e4bf8ad5821ee474fdae3a7818c2d1ea18725\.gif,REJECT
+DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
 
 # > Tencent & 腾讯
 DOMAIN-SUFFIX,aegis.qq.com,REJECT
@@ -111,7 +103,6 @@ URL-REGEX,^https:\/\/wsx\.acqc9\.com\/sh\/to,REJECT
 
 # >>> 广告插件
 DOMAIN-SUFFIX,ether-pack.pangolin-sdk-toutiao.com,REJECT
-
 DOMAIN-SUFFIX,sf6-fe-tos.pglstatp-toutiao.com,REJECT
 DOMAIN-SUFFIX,pgdt.ugdtimg.com,REJECT
 DOMAIN-SUFFIX,v9-be-pack.pglstatp-toutiao.com,REJECT
