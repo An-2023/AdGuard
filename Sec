@@ -80,22 +80,12 @@ DOMAIN-SUFFIX,gdt.qq.com,REJECT
 DOMAIN-SUFFIX,pgdt.ugdtimg.com,REJECT
 DOMAIN-SUFFIX,trace.qq.com,REJECT
 
-# > JavaScript & 脚本
+# > JavaScript & HTTP
 # [+] 2023-04-29 01、<qiman59.com> 插页广告脚本
-URL-REGEX,^https:\/\/adurl\.scriptmh\.com\/getUrl\.php\?r=,REJECT
-URL-REGEX,^https:\/\/adurl\.admh8\.com\/getAdUrl\.php\?r,REJECT
-# [+] 2023-04-29 02、<dushimh.com> 插页广告脚本
-DOMAIN-SUFFIX,tpic.kszvmqo.cn,REJECT
-URL-REGEX,^https:\/\/diy\.dcqs4\.com\/sh\/to\/1380,REJECT
-URL-REGEX,^https:\/\/diy\.wcdc5\.com\/sh\/to\/1381,REJECT
-# [+] 2023-04-29 03、<dushimh.com> 广告顶部横幅
-URL-REGEX,^https:\/\/tg\.wmqfey\.com\/sc\/6276\?n=kbbxqcbr,REJECT
-# [+] 2023-04-29 04、<dushimh.com> 无用的页面元素
-URL-REGEX,^https:\/\/m\.dushimh\.com\/assets\/d6ae7e24\/images\/head_line\.gif,REJECT
-# [+] 2023-04-29 05、<iqtao.cn> 广告顶部横幅
-URL-REGEX,^https:\/\/wap\.elevatorpartsbuy\.com\/sc\/2169\?n=ugoggdnf,REJECT
-# [+] 2023-04-29 06、<biqugei.net> 广告顶部横幅
-URL-REGEX,^https:\/\/wsx\.acqc9\.com\/sh\/to,REJECT
+URL-REGEX,^https:\/\/adurl\.scriptmh\.com\/getUrl\.php,REJECT
+
+# > JavaScript & HTTPS
+
 
 
 
