@@ -82,7 +82,7 @@ DOMAIN-SUFFIX,trace.qq.com,REJECT
 
 # > JavaScript & HTTP
 # [+] 2023-04-29 01、<qiman59.com> 插页广告脚本
-URL-REGEX,^https://adurl.scriptmh.com/getUrl.php\?r=,REJECT
+URL-REGEX,^https?://adurl.scriptmh.com/getUrl.php\?r=,REJECT
 
 # > JavaScript & HTTPS
 
