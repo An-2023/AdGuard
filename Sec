@@ -82,7 +82,7 @@ DOMAIN-SUFFIX,trace.qq.com,REJECT
 
 # > JavaScript & HTTP
 # [+] 2023-04-29 01、<qiman59.com> 插页广告脚本
-URL-REGEX,^https:\/\/adurl\.scriptmh\.com\/getUrl\.php,REJECT
+URL-REGEX,^https://adurl.scriptmh.com/getUrl.php\?r=,REJECT
 
 # > JavaScript & HTTPS
 
@@ -124,5 +124,5 @@ FINAL,DIRECT
 
 [URL Rewrite]
 # > Google
-# [+] 2023-04-27 01、Google Domain Name Rewriting
-^https?:\/\/(www.)?(g|google).cn https://www.google.com 302
+# [+] 2023-04-27 01、Google Domestic Domain Name Rewriting
+^https?://(www.)?(g|google).cn https://www.google.com 302
