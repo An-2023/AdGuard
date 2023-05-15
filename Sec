@@ -62,6 +62,7 @@ DOMAIN-SUFFIX,sp1.baidu.com,REJECT
 DOMAIN-SUFFIX,zz.bdstatic.com,REJECT
 
 # > ByteDance & 字节跳动
+DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao.com,REJECT
 DOMAIN-SUFFIX,ads3-normal-lf.zijieapi.com,REJECT
 DOMAIN-SUFFIX,ads5-normal-lf.zijieapi.com,REJECT
 DOMAIN-SUFFIX,dm.toutiao.com,REJECT
