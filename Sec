@@ -2,101 +2,29 @@
 bypass-system = true
 
 [Rule]
-# Domain name rules for privacy protection and advertising interception
 
-# > IP Address
+# ➤ All Rule
+FINAL,DIRECT
+
+# ➤ 本机 IP 收集
 DOMAIN-SUFFIX,pv.ip1398.com,REJECT
 
-# > China + EasyList
-DOMAIN-SUFFIX,ads.sohu.com,REJECT
-DOMAIN-SUFFIX,ax.ifeng.com,REJECT
-DOMAIN-SUFFIX,bd-js1.2345.com,REJECT
-DOMAIN-SUFFIX,dongya.org,REJECT
-DOMAIN-SUFFIX,ggs.myzaker.com,REJECT
-DOMAIN-SUFFIX,ggxwb.miguvideo.com,REJECT
-DOMAIN-SUFFIX,ghghgf.xuexiwa.com,REJECT
-DOMAIN-SUFFIX,ivy.pconline.com.cn,REJECT
-DOMAIN-SUFFIX,p.tanx.com,REJECT
-DOMAIN-SUFFIX,rpajqxo.cn,REJECT
-DOMAIN-SUFFIX,vungle.com,REJECT
-DOMAIN-SUFFIX,xmmnsl.com,REJECT
-DOMAIN-SUFFIX,yylady.cn,REJECT
-
-# > EasyPrivacy（隐私保护）
-DOMAIN-SUFFIX,analytics.126.net,REJECT
-DOMAIN-SUFFIX,cnzz.com,REJECT
-DOMAIN-SUFFIX,collector.github.com,REJECT
-DOMAIN-SUFFIX,d31qbv1cthcecs.cloudfront.net,REJECT
-DOMAIN-SUFFIX,dig.bdurl.net,REJECT
-DOMAIN-SUFFIX,google-analytics.com,REJECT
-DOMAIN-SUFFIX,histats.com,REJECT
-DOMAIN-SUFFIX,launches.appsflyer.com,REJECT
-DOMAIN-SUFFIX,log.sina.cn,REJECT
-DOMAIN-SUFFIX,msg.qy.net,REJECT
-DOMAIN-SUFFIX,nex.163.com,REJECT
-DOMAIN-SUFFIX,pv.sohu.com,REJECT
-DOMAIN-SUFFIX,sbeacon.sina.com.cn,REJECT
-DOMAIN-SUFFIX,sdk.51.la,REJECT
-DOMAIN-SUFFIX,sugar.zhihu.com,REJECT
-DOMAIN-SUFFIX,toblog.ctobsnssdk.com,REJECT
-DOMAIN-SUFFIX,tobapplog.ctobsnssdk.com,REJECT
-DOMAIN-SUFFIX,track.sohu.com,REJECT
-DOMAIN-SUFFIX,tracklog.58.com,REJECT
-DOMAIN-SUFFIX,zhihu-web-analytics.zhihu.com,REJECT
-
-# > Alibaba & 阿里巴巴
-DOMAIN-SUFFIX,df.tanx.com,REJECT
-DOMAIN-SUFFIX,fourier.taobao.com,REJECT
-DOMAIN-SUFFIX,mmstat.com,REJECT
-
-# > Baidu & 百度
-DOMAIN-SUFFIX,als.baidu.com,REJECT
-DOMAIN-SUFFIX,cpro.baidustatic.com,REJECT
-DOMAIN-SUFFIX,eclick.baidu.com,REJECT
-DOMAIN-SUFFIX,ecmb.bdimg.com,REJECT
-DOMAIN-SUFFIX,hm.baidu.com,REJECT
-DOMAIN-SUFFIX,pos.baidu.com,REJECT
-DOMAIN-SUFFIX,push.zhanzhang.baidu.com,REJECT
-DOMAIN-SUFFIX,sofire.bdstatic.com,REJECT
-DOMAIN-SUFFIX,sp1.baidu.com,REJECT
-DOMAIN-SUFFIX,zz.bdstatic.com,REJECT
-
-# > ByteDance & 字节跳动
-DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao.com,REJECT
-DOMAIN-SUFFIX,ads3-normal-lf.zijieapi.com,REJECT
-DOMAIN-SUFFIX,ads5-normal-lf.zijieapi.com,REJECT
-DOMAIN-SUFFIX,dm.toutiao.com,REJECT
-DOMAIN-SUFFIX,log-api.pangolin-sdk-toutiao.com,REJECT
-DOMAIN-SUFFIX,log-api.pangolin-sdk-toutiao-b.com,REJECT
-DOMAIN-SUFFIX,mcs.snssdk.com,REJECT
-DOMAIN-SUFFIX,p6-ad-sign.byteimg.com,REJECT
-DOMAIN-SUFFIX,p9-ad-sign.byteimg.com,REJECT
-DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
-
-# > Tencent & 腾讯
-DOMAIN-SUFFIX,aegis.qq.com,REJECT
-DOMAIN-SUFFIX,beacon.qq.com,REJECT
-DOMAIN-SUFFIX,e.qq.com,REJECT
-DOMAIN-SUFFIX,gdt.qq.com,REJECT
+# ➤ Tencent & 腾讯 
 DOMAIN-SUFFIX,pgdt.ugdtimg.com,REJECT
-DOMAIN-SUFFIX,trace.qq.com,REJECT
 
-# > JavaScript & HTTP
-
+# ➤ JavaScript & HTTP
 # [+] 2023-04-29 01、<qiman59.com> 插页广告脚本
 URL-REGEX,^https?://adurl.scriptmh.com/getUrl.php\?r=,REJECT
 
-# > JavaScript & HTTPS
+# ➤ JavaScript & HTTPS
 
+# ------------------------------------------------------------
 
-
-
-# Domain name rules that require proxy or accelerated access overseas
-# >> GitHub
+# ➤ GitHub
 DOMAIN-SUFFIX,github.com,PROXY
 DOMAIN-SUFFIX,raw.githubusercontent.com,PROXY
 
-# >> Google
+# ➤ Google
 DOMAIN-SUFFIX,google.com,PROXY
 DOMAIN-SUFFIX,google.com.hk,PROXY
 DOMAIN-SUFFIX,googleapis.com,PROXY
@@ -107,24 +35,18 @@ DOMAIN-SUFFIX,youtu.be,PROXY
 DOMAIN-SUFFIX,youtube.com,PROXY
 DOMAIN-SUFFIX,ytimg.com,PROXY
 
-# >> Telegram
+# ➤ Telegram
 DOMAIN-SUFFIX,t.me,PROXY
 DOMAIN-SUFFIX,telegra.ph,PROXY
 DOMAIN-SUFFIX,telegram.org,PROXY
 IP-CIDR,91.108.56.0/22,PROXY,no-resolve
 IP-CIDR,149.154.160.0/20,PROXY,no-resolve
 
-# >> Twitter
+# ➤ Twitter
 DOMAIN-SUFFIX,t.co,PROXY
 DOMAIN-SUFFIX,twimg.com,PROXY
 DOMAIN-SUFFIX,twitter.com,PROXY
 
-
-
-# >>> Rules not indicated in the above rule system
-FINAL,DIRECT
-
 [URL Rewrite]
-# > Google
-# [+] 2023-04-27 01、Google Domestic Domain Name Rewriting
+# [+] 2023-04-27 01、Google 国内域名重写
 ^https?://(www.)?(g|google).cn https://www.google.com 302
