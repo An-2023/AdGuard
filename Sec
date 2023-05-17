@@ -4,21 +4,35 @@ bypass-system = true
 [Rule]
 
 # ➤ All Rule
-FINAL,DIRECT
+FINAL,REJECT
+
+# ------------------------------------------------
 
 # ➤ 本机 IP 收集
 DOMAIN-SUFFIX,pv.ip1398.com,REJECT
 
-# ➤ Tencent & 腾讯 
-DOMAIN-SUFFIX,pgdt.ugdtimg.com,REJECT
+# ➤ Alibaba ➥ 旗下域名
+DOMAIN-SUFFIX,alipay.com,DIRECT
+DOMAIN-SUFFIX,alipay.com.cn,DIRECT
+DOMAIN-SUFFIX,taobao.com,DIRECT
 
-# ➤ JavaScript & HTTP
+# ➤ Tencent ➥ 旗下域名
+DOMAIN-SUFFIX,pgdt.ugdtimg.com,REJECT
+DOMAIN-SUFFIX,qq.com,DIRECT
+
+# ➤ 畅行石化 ➥ App
+DOMAIN-SUFFIX,lygshjd.com,DIRECT
+
+# ➤ 知乎 ➥ App
+DOMAIN-SUFFIX,zhihu.com,DIRECT
+
+# ➤ JavaScript ➥ HTTP 系列
 # [+] 2023-04-29 01、<qiman59.com> 插页广告脚本
 URL-REGEX,^https?://adurl.scriptmh.com/getUrl.php\?r=,REJECT
 
-# ➤ JavaScript & HTTPS
+# ➤ JavaScript ➥ HTTPS 系列
 
-# ------------------------------------------------------------
+# ------------------------------------------------
 
 # ➤ GitHub
 DOMAIN-SUFFIX,github.com,PROXY
@@ -46,6 +60,8 @@ IP-CIDR,149.154.160.0/20,PROXY,no-resolve
 DOMAIN-SUFFIX,t.co,PROXY
 DOMAIN-SUFFIX,twimg.com,PROXY
 DOMAIN-SUFFIX,twitter.com,PROXY
+
+# ------------------------------------------------
 
 [URL Rewrite]
 # [+] 2023-04-27 01、Google 国内域名重写
