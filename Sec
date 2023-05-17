@@ -16,9 +16,16 @@ DOMAIN-SUFFIX,alipay.com,DIRECT
 DOMAIN-SUFFIX,alipay.com.cn,DIRECT
 DOMAIN-SUFFIX,taobao.com,DIRECT
 
+# ➤ ByteDance ➥ 旗下域名
+# [+] 2023-04-27 抖音 App
+DOMAIN-SUFFIX,amemv.com,DIRECT
+DOMAIN-SUFFIX,douyinvod.com,DIRECT
+
 # ➤ Tencent ➥ 旗下域名
-DOMAIN-SUFFIX,pgdt.ugdtimg.com,REJECT
+# [+] 2023-04-27 必备域名
 DOMAIN-SUFFIX,qq.com,DIRECT
+# [+] 2023-04-27 广告营销视频
+DOMAIN-SUFFIX,pgdt.ugdtimg.com,REJECT
 
 # ➤ 畅行石化 ➥ App
 DOMAIN-SUFFIX,lygshjd.com,DIRECT
@@ -27,7 +34,7 @@ DOMAIN-SUFFIX,lygshjd.com,DIRECT
 DOMAIN-SUFFIX,zhihu.com,DIRECT
 
 # ➤ JavaScript ➥ HTTP 系列
-# [+] 2023-04-29 01、<qiman59.com> 插页广告脚本
+# [+] 2023-04-29 <qiman59.com> 插页广告脚本
 URL-REGEX,^https?://adurl.scriptmh.com/getUrl.php\?r=,REJECT
 
 # ➤ JavaScript ➥ HTTPS 系列
