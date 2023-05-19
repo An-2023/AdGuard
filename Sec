@@ -15,7 +15,7 @@ DOMAIN-SUFFIX,taobao.com,DIRECT
 # [+] 2023-04-27 抖音 App
 DOMAIN-SUFFIX,amemv.com,DIRECT
 DOMAIN-SUFFIX,douyinvod.com,DIRECT
-# [+] 2023-04-29 [ 番茄小说 ] 小说内容下的轮播横幅广告
+# [+] 2023-04-29 [ 番茄小说 App ] 小说正文里的广告元素
 DOMAIN-SUFFIX,ads3-normal-lf.zijieapi.com,REJECT
 DOMAIN-SUFFIX,ads5-normal-lf.zijieapi.com,REJECT
 
@@ -32,7 +32,7 @@ DOMAIN-SUFFIX,zhihu.com,DIRECT
 DOMAIN-SUFFIX,zhimg.com,DIRECT
 
 # ➤ JavaScript ➥ HTTP 系列
-# [+] 2023-04-29 [ qiman59.com ] 插页广告脚本
+# [+] 2023-04-29 [ qiman59.com ] 网页正中间的广告脚本
 URL-REGEX,^https?://adurl.scriptmh.com/getUrl.php\?r=,REJECT
 
 # ➤ JavaScript ➥ HTTPS 系列
