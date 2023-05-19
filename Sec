@@ -24,9 +24,9 @@ DOMAIN-SUFFIX,ads3-normal-lf.zijieapi.com,REJECT
 DOMAIN-SUFFIX,ads5-normal-lf.zijieapi.com,REJECT
 
 # ➤ Tencent ➥ 旗下域名
-DOMAIN-SUFFIX,qq.com,DIRECT
-# [+] 2023-04-27 广告营销视频
+DOMAIN-SUFFIX,gdt.qq.com,REJECT
 DOMAIN-SUFFIX,pgdt.ugdtimg.com,REJECT
+DOMAIN-SUFFIX,trace.qq.com,REJECT
 
 # ➤ 畅行石化 ➥ App
 DOMAIN-SUFFIX,lygshjd.com,DIRECT
