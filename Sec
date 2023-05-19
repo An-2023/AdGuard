@@ -12,7 +12,7 @@ DOMAIN-SUFFIX,alipay.com.cn,DIRECT
 DOMAIN-SUFFIX,taobao.com,DIRECT
 
 # ➤ Baidu ➥ 旗下域名
-# [+] 2023-04-29 百度统计 ~ 收集用户信息及网站流量跟踪器
+# [+] 2023-04-29 百度统计 ~ 用于收集数据及流量分析跟踪器
 DOMAIN-SUFFIX,hm.baidu.com,REJECT
 
 # ➤ ByteDance ➥ 旗下域名
