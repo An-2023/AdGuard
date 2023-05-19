@@ -15,7 +15,7 @@ DOMAIN-SUFFIX,taobao.com,DIRECT
 # [+] 2023-04-27 抖音 App
 DOMAIN-SUFFIX,amemv.com,DIRECT
 DOMAIN-SUFFIX,douyinvod.com,DIRECT
-# [+] 2023-04-29 [ 番茄小说 ] 内容下的轮播横幅广告
+# [+] 2023-04-29 [ 番茄小说 ] 小说内容下的轮播横幅广告
 DOMAIN-SUFFIX,ads3-normal-lf.zijieapi.com,REJECT
 DOMAIN-SUFFIX,ads5-normal-lf.zijieapi.com,REJECT
 
