@@ -3,11 +3,6 @@ bypass-system = true
 
 [Rule]
 
-# ➤ All Rule
-FINAL,REJECT
-
-# ------------------------------------------------
-
 # ➤ 本机 IP 收集
 DOMAIN-SUFFIX,pv.ip1398.com,REJECT
 
@@ -20,9 +15,11 @@ DOMAIN-SUFFIX,taobao.com,DIRECT
 # [+] 2023-04-27 抖音 App
 DOMAIN-SUFFIX,amemv.com,DIRECT
 DOMAIN-SUFFIX,douyinvod.com,DIRECT
+# [+] 2023-04-29 [ 番茄小说 ] 内容下的轮播横幅广告
+DOMAIN-SUFFIX,ads3-normal-lf.zijieapi.com,REJECT
+DOMAIN-SUFFIX,ads5-normal-lf.zijieapi.com,REJECT
 
 # ➤ Tencent ➥ 旗下域名
-# [+] 2023-04-27 必备域名
 DOMAIN-SUFFIX,qq.com,DIRECT
 # [+] 2023-04-27 广告营销视频
 DOMAIN-SUFFIX,pgdt.ugdtimg.com,REJECT
@@ -32,6 +29,7 @@ DOMAIN-SUFFIX,lygshjd.com,DIRECT
 
 # ➤ 知乎 ➥ App
 DOMAIN-SUFFIX,zhihu.com,DIRECT
+DOMAIN-SUFFIX,zhimg.com,DIRECT
 
 # ➤ JavaScript ➥ HTTP 系列
 # [+] 2023-04-29 <qiman59.com> 插页广告脚本
@@ -41,9 +39,12 @@ URL-REGEX,^https?://adurl.scriptmh.com/getUrl.php\?r=,REJECT
 
 # ------------------------------------------------
 
+# ➤ DuckDuckGo
+DOMAIN-SUFFIX,duckduckgo.com,PROXY
+
 # ➤ GitHub
 DOMAIN-SUFFIX,github.com,PROXY
-DOMAIN-SUFFIX,raw.githubusercontent.com,PROXY
+DOMAIN-SUFFIX,githubusercontent.com,PROXY
 
 # ➤ Google
 DOMAIN-SUFFIX,google.com,PROXY
@@ -69,6 +70,9 @@ DOMAIN-SUFFIX,twimg.com,PROXY
 DOMAIN-SUFFIX,twitter.com,PROXY
 
 # ------------------------------------------------
+
+# ➤ All Rule
+FINAL,DIRECT
 
 [URL Rewrite]
 # [+] 2023-04-27 01、Google 国内域名重写
