@@ -40,6 +40,8 @@ DOMAIN-SUFFIX,zhimg.com,DIRECT
 URL-REGEX,^https?://adurl.scriptmh.com/getUrl.php\?r=,REJECT
 
 # ➤ JavaScript ➥ HTTPS 系列
+# [+] 2023-05-20 [ xsbiquge.org ] & [ EasyList China ]
+DOMAIN-SUFFIX,ljte0.com,REJECT
 
 # ------------------------------------------------
 
