@@ -9,7 +9,7 @@ DOMAIN-SUFFIX,pv.ip1398.com,REJECT
 # ➤ Alibaba ➥ 旗下域名
 
 # ➤ Baidu ➥ 旗下域名
-# [+] 2023-04-29 百度统计 ~ 用于收集数据及流量分析跟踪器
+DOMAIN-SUFFIX,cpro.baidu.com,REJECT
 DOMAIN-SUFFIX,hm.baidu.com,REJECT
 DOMAIN-SUFFIX,mobads.baidu.com,REJECT
 DOMAIN-SUFFIX,pos.baidu.com,REJECT
@@ -20,6 +20,7 @@ DOMAIN-SUFFIX,ads3-normal-lf.zijieapi.com,REJECT
 DOMAIN-SUFFIX,ads5-normal-lf.zijieapi.com,REJECT
 
 # ➤ Tencent ➥ 旗下域名
+DOMAIN-SUFFIX,beacon.qq.com,REJECT
 DOMAIN-SUFFIX,e.qq.com,REJECT
 DOMAIN-SUFFIX,gdt.qq.com,REJECT
 DOMAIN-SUFFIX,pgdt.ugdtimg.com,REJECT
