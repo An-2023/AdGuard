@@ -1,0 +1,28 @@
+[Rule]
+
+# ➤ 本机 IP 收集
+DOMAIN-SUFFIX,pv.ip1398.com,REJECT
+
+# ➤ Baidu
+DOMAIN-SUFFIX,hm.baidu.com,REJECT
+DOMAIN-SUFFIX,mobads.baidu.com,REJECT
+DOMAIN-SUFFIX,pos.baidu.com,REJECT
+
+# ➤ Tencent
+DOMAIN-SUFFIX,e.qq.com,REJECT
+DOMAIN-SUFFIX,gdt.qq.com,REJECT
+DOMAIN-SUFFIX,trace.qq.com,REJECT
+
+# ➤ ByteDance
+DOMAIN-SUFFIX,ads3-normal-lf.zijieapi.com,REJECT
+DOMAIN-SUFFIX,ads5-normal-lf.zijieapi.com,REJECT
+
+# ➤ Top AdGuard Ads
+DOMAIN-SUFFIX,ljte0.com,REJECT
+DOMAIN-SUFFIX,pv.sohu.com,REJECT
+DOMAIN-SUFFIX,sugar.zhihu.com,REJECT
+DOMAIN-SUFFIX,zhihu-web-analytics.zhihu.com,REJECT
+
+[URL Rewrite]
+^https?://(www.)?g.cn https://www.google.com 302
+^https?://(www.)?google.cn https://www.google.com 302
